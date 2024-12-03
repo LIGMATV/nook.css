@@ -1,0 +1,157 @@
+:root {
+    --color: #0076d1;
+    --bg: #fff;
+    --text: #000;
+    --surface: #efefef;
+    --surface2: #dddddd;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #000;
+        --text: #fff;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    margin: 1rem auto;
+    width: 90%;
+    max-width: 50rem;
+    font-size: 1rem;
+    line-height: 1.65;
+}
+
+a {
+    color: var(--color);
+}
+
+a:not(:hover) {
+    text-decoration: none;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--surface2);
+}
+
+:not(i, em, blockquote) {
+    font-style: normal;
+}
+
+a[href^=mailto\:]:before {
+    content: "📧 "
+}
+
+a[href^=tel\:]:before {
+    content: "📞 "
+}
+
+a[href^=sms\:]:before {
+    content: "💬 "
+}
+
+:is(h1, h2, h3, h4, h5, h6, b, strong, th) {
+    font-weight: 600;
+}
+
+:is(pre, code) {
+    font-size: .85rem;
+}
+
+:is(code, kbd) {
+    background-color: var(--surface);
+    padding: .25rem;
+    border-radius: 6px;
+}
+
+pre>code {
+    display: block;
+    padding: .5rem;
+}
+
+blockquote {
+    border-left: 4px solid var(--color);
+    margin: 1.5em 0;
+    padding: .5em 1em;
+    font-style: italic;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+td,
+th {
+    padding: 6px;
+    text-align: left;
+}
+
+th {
+    border-bottom: 1px solid var(--surface2);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--surface);
+}
+
+input {
+    vertical-align: top;
+}
+
+textarea {
+    width: 100%;
+    resize: vertical;
+}
+
+:is(input, textarea, button) {
+    font: inherit;
+    padding: .35rem .5rem;
+    border-radius: .35rem;
+    border: none;
+    background-color: var(--surface);
+    outline: 2px solid transparent;
+    transition: background-color .1s, outline .1s, transform .1s;
+}
+
+:is(input, textarea, button):focus {
+    outline-color: var(--color);
+}
+
+button,
+input:is([type='checkbox'], [type='radio'], [type='submit'], input[type='button']) {
+    cursor: pointer;
+    padding: .35rem 1.35rem;
+}
+
+button:hover,
+input:is([type='checkbox'], [type='radio'], [type='submit'], input[type='button']):hover {
+    background-color: var(--surface2);
+}
+
+button:active,
+input:is([type='checkbox'], [type='radio'], [type='submit'], input[type='button']):active {
+    transform: translateY(2px);
+}
+
+input:not( :is([type='checkbox'], [type='radio']), select, button, textarea) {
+    margin: .25rem 0 .75rem;
+}
+
+input:not( :is([type='checkbox'], [type='radio'])),
+select {
+    display: block;
+}
+
+input:is([type='checkbox'], [type='radio']) {
+    width: 1rem;
+    height: 1rem;
+    margin-top: .35rem;
+}

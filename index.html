@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <title>CSS Bed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="nook.css">
+</head>
+
+<body>
+  <main>
+    <h1>Nook.css</h1>
+    <blockquote>
+      "Water.css" ahh new framework. No JavaScript. No Classes. Just raw & customizable CSS.
+    </blockquote>
+    <p>
+      Inspired by the <a href="https://github.com/kognise/water.css/issues/351">abandoned</a> <a
+        href="https://github.com/kognise/water.css">Water.css</a>, without wasted styles and hassle!
+      <br>
+      Making an simple web page with some typography or forms should not be complicated, the idea of classless framework
+      was firstly discussed by Lexi Mattick (<a href="https://github.com/kognise">@kognise</a>) in <a
+        href="https://news.ycombinator.com/item?id=19593866">Hacker News</a>.
+      <br>
+      With small touch and improvement, an webpage can be really nice even without adding classes or a bit styles.
+      Even W3C try to make a classless framework called <a href="https://www.w3.org/StyleSheets/Core/Overview">W3C Core
+        Styles</a>, but what you get? Just for typography styling! Even <a
+        href="https://www.cssbed.com/w3c-chocolate/">also cheap though.</a>
+    </p>
+
+    <h2>Goals</h2>
+    <ul>
+      <li>Responsive</li>
+      <li>Good code quality</li>
+      <li>Good browser support</li>
+      <li>Small size (&lt; 2 kb)</li>
+      <li>Beautiful</li>
+      <li>No learning curve - use HTML as you would normally instead of going to the docs to learn which class does
+        what and having to fight the framework otherwise.</li>
+      <li><a href="https://news.ycombinator.com/item?id=19593866">Original Hacker News Thread</a></li>
+    </ul>
+
+    <h2>Is it responsive?</h2>
+    <p>
+      <strong>Heck yeah!</strong> It doesn't include any fancy styles so it's easily mobile responsive.
+      Just add the famous <a href='https://www.w3schools.com/css/css_rwd_viewport.asp'>responsive viewport tag</a> and
+      you'll be good to go!
+    </p>
+    <p>
+      In fact, try resizing this page. Everything flows super nicely as you'll see.
+    </p>
+
+    <h2>Element demos</h2>
+    <p>
+      This is supposed to be a demo page so we need more elements!
+    </p>
+
+    <h3>Form elements</h3>
+    <form onsubmit="return false;">
+      <label for='email'>Email</label>
+      <input type='email' name='email' id='email' placeholder='john.doe@gmail.com'>
+
+      <label for='id'>User id (read only)</label>
+      <input readonly name='id' id='id' value='04D6H89Z'>
+
+      <label for='disabled'>Random disabled input</label>
+      <input disabled name='disabled' id='disabled' placeholder='Because why not?'>
+
+      <label for='about'>About me</label>
+      <textarea name='about' id='about' placeholder='I am a textarea...'></textarea>
+
+      <label>Choose a radio:</label>
+      <div>
+        <input type='radio' id='john' name='drone' value='john' checked>
+        <label for='john'>John Doe</label>
+      </div>
+      <div>
+        <input type='radio' id='jane' name='drone' value='jane' checked>
+        <label for='jane'>Jane Doe</label>
+      </div>
+      <div>
+        <input type='radio' id='johnny' name='drone' value='johnny' checked>
+        <label for='johnny'>Johnny Doe</label>
+      </div>
+
+      <br>
+
+      <label>Checkboxes</label>
+      <div>
+        <input type='checkbox' name='unchecked' id='unchecked'>
+        <label for='unchecked'>Unchecked</label>
+        <input type='checkbox' name='remember' id='remember' checked>
+        <label for='remember'>Remember me</label>
+      </div>
+
+      <input type='submit'>
+    </form>
+
+    <h3>Code</h3>
+    <p>
+      Below is some code, you can copy it with <kbd>Ctrl-C</kbd>.
+      Did you know, <code>alert(1)</code> can show an alert in JavaScript!
+    </p>
+    <pre><code>// This logs a message to the console<br>console.log('Hello, world!')</code></pre>
+
+    <h3>Other</h3>
+    <p>Here's a horizontal rule and image because I don't know where else to put them.</p>
+    <img src='https://i.imgur.com/mOq7DbU.jpg' alt='Example kitten'>
+    <hr>
+
+
+    <p>
+      This is a <button>button</button> or a more formal <button>OK</button>
+    </p>
+    <blockquote>This is a blockquote</blockquote>
+    <pre>
+      Good old preformatted text, no code at all
+      
+       |\_/|        ****************************    (\_/)
+      / @ @ \       *  "Purrrfectly pleasant"  *   (='.'=)
+     ( > º < )      *       Poppy Prinz        *   (")_(")
+      `>>x<<´       *   (pprinz@example.com)   *
+      /  O  \       ****************************
+     
+    </pre>
+
+    <p>And here's a nicely marked up table!</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Godzilla</td>
+          <td>2</td>
+          <td>$299.99</td>
+        </tr>
+        <tr>
+          <td>Mozilla</td>
+          <td>10</td>
+          <td>$100,000.00</td>
+        </tr>
+        <tr>
+          <td>Quesadilla</td>
+          <td>1</td>
+          <td>$2.22</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Typography</h3>
+    <p>
+      “Lorem Ipsum…” is not simply a piece of random Latin-like garbled text used for dummy typesetting for testing
+      “look and feel” of printed documents “Lorem Ipsum” actuaLLY comes from paragraphs 1.10.32 to 1.10.33 of a lesser
+      known work on ethics by the Roman philosopher and orator Cicero: his "de Finibus Bonorum et Malorum" (“The Limits
+      of Good and Evil”) Which was written around 45 BC. Lorem Ipsum has been the typesetting trade’s standard dummy
+      text since the sixteenth century, when it would seem some un-named printer used it to make a specimen book of
+      different galleys of font using it as a standard text to enable a customer to assess their preferred presentation
+      without being distracted by actual meaningful content. It gained new life in the in the 1960s when home “DIY”
+      printing was popularised in Letraset with demonstartion sheets containing the Lorem Ipsum… which then morphed into
+      desktop publishing software.
+      <strong>This is strong,</strong> this is normal, <b>this is just bold,</b> <em>and this is emphasized!</em> And
+      heck, <a href='/'>here</a>'s a link.
+    </p>
+
+    <blockquote cite='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote'>
+      "The HTML blockquote Element (or HTML Block Quotation Element) indicates
+      that the enclosed text is an extended quotation. Usually, this is
+      rendered visually by indentation (see
+      <a href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote#Usage_notes'>Notes</a>
+      for how to change it). A URL for the source of the quotation may be given using the
+      <code>cite</code> attribute, while a text representation of the source
+      can be given using the <code>&ltcite&gt</code> cite element."
+
+      <footer>
+        <cite>MDN, "The Block Quotation element"</cite>
+      </footer>
+    </blockquote>
+
+    <ul>
+      <li>Unordered list item 1</li>
+      <li>Unordered list item 2</li>
+      <li>Unordered list item 3</li>
+    </ul>
+    <ol>
+      <li>Ordered list item 1</li>
+      <li>Ordered list item 2</li>
+      <li>Ordered list item 3</li>
+    </ol>
+
+    <p>
+      Links with <code>mailto:</code>, <code>tel:</code>, <code>sms:</code> addresses might be styled...
+    </p>
+    <address>
+      <a href='mailto:john.doe@example.com'>john.doe@example.com</a><br />
+      <a href='tel:778-330-2389'>778-330-2389</a><br />
+      <a href='sms:666-666-6666'>666-666-6666</a><br />
+    </address>
+
+    <h1>Heading 1</h1>
+    <p>A paragraph <code>&lt;p&gt;</code> of lorem ipsum after the heading. Cascading Style Sheets (CSS) is a style
+      sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a
+      cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+
+    <h2>Heading 2</h2>
+    <p>A paragraph <code>&lt;p&gt;</code> of lorem ipsum after the heading. Cascading Style Sheets (CSS) is a style
+      sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a
+      cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+
+    <h3>Heading 3</h3>
+    <p>A paragraph <code>&lt;p&gt;</code> of lorem ipsum after the heading. Cascading Style Sheets (CSS) is a style
+      sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a
+      cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+
+    <h4>Heading 4</h4>
+    <p>A paragraph <code>&lt;p&gt;</code> of lorem ipsum after the heading. Cascading Style Sheets (CSS) is a style
+      sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a
+      cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+
+    <h5>Heading 5</h5>
+    <p>A paragraph <code>&lt;p&gt;</code> of lorem ipsum after the heading. Cascading Style Sheets (CSS) is a style
+      sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a
+      cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+
+    <h6>Heading 6</h6>
+    <p>A paragraph <code>&lt;p&gt;</code> of lorem ipsum after the heading. Cascading Style Sheets (CSS) is a style
+      sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a
+      cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+
+  </main>
+</body>
+
+</html>
